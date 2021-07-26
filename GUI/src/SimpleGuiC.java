@@ -14,10 +14,10 @@ public class SimpleGuiC implements ActionListener {
         frame = new JFrame();
         JButton button = new JButton("Change colors");
         button.addActionListener(this);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         MyDrawPanel drawPanel1 = new MyDrawPanel();
         frame.getContentPane().add(BorderLayout.SOUTH,button);
         frame.getContentPane().add(BorderLayout.CENTER,drawPanel1);
-
         frame.setSize(300,300);
         frame.setVisible(true);
 

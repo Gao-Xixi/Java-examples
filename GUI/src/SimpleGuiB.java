@@ -14,7 +14,6 @@ public class SimpleGuiB implements ActionListener{
 
         button.addActionListener(this);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
         frame.getContentPane().add(button);
         frame.setSize(300,300);;
         frame.setVisible(true);
