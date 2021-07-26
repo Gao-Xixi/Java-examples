@@ -1,7 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
 
-public class GUI {
+public class SimpleGuiA {
     public static void main(String[] args) {
         JFrame frame = new JFrame();
         JButton button = new JButton("click me");
