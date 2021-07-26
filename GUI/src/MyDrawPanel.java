@@ -26,34 +26,34 @@ public class MyDrawPanel extends JPanel{
 
 //    }
 
-//    /**
-//     * 3 Paint a randomly-colored circle one a background
-//     * @param g
-//     */
-//    @Override
-//    public void paintComponent(Graphics g) {
-//        g.fillRect(0,0,this.getWidth(),this.getHeight());
-//        int red = (int)(Math.random() * 256);
-//        int green = (int)(Math.random() * 256);
-//        int blue = (int)(Math.random() * 256);
-//
-//        Color randomColor = new Color(red,green,blue);
-//        g.setColor(randomColor);
-//        g.fillOval(70,70,100,100);
-//    }
-
     /**
-     * 4 Graphics2D (polymorphism) need cast
-     * 渐变色
+     * 3 Paint a randomly-colored circle one a background
      * @param g
      */
     @Override
     public void paintComponent(Graphics g) {
-        Graphics2D g2d = (Graphics2D) g;
-        GradientPaint gradient = new GradientPaint(70,70,Color.BLUE,150,150, Color.ORANGE);
-        g2d.setPaint(gradient);
-        g.fillOval(70, 70, 100, 100);
+        g.fillRect(0,0,this.getWidth(),this.getHeight());
+        int red = (int)(Math.random() * 256);
+        int green = (int)(Math.random() * 256);
+        int blue = (int)(Math.random() * 256);
+
+        Color randomColor = new Color(red,green,blue);
+        g.setColor(randomColor);
+        g.fillOval(70,70,100,100);
     }
+
+//    /**
+//     * 4 Graphics2D (polymorphism) need cast
+//     * 渐变色
+//     * @param g
+//     */
+//    @Override
+//    public void paintComponent(Graphics g) {
+//        Graphics2D g2d = (Graphics2D) g;
+//        GradientPaint gradient = new GradientPaint(70,70,Color.BLUE,150,150, Color.ORANGE);
+//        g2d.setPaint(gradient);
+//        g.fillOval(70, 70, 100, 100);
+//    }
     public static void main(String[] args) {
         JFrame frame = new JFrame();
         MyDrawPanel panel = new MyDrawPanel();
